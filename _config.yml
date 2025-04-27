@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 locale: "en-US"
 title: DH
-name: Douglas Higgin
+name: Douglas Higgins
 description: >- # this means to ignore newlines until "baseurl:"
   Biologist & Software Developer
 # twitter_username: username
@@ -93,6 +93,7 @@ collections:
   portfolio:
     output: true
     permalink: /portfolio/:path/
+    show_date: true
 
 defaults:
   # _posts
@@ -103,7 +104,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: false
       share: true
       related: true
   # _pages
@@ -121,6 +122,9 @@ defaults:
       layout: single
       author_profile: false
       share: false
+      classes: wide
+      sidebar: false
+      show_date: true
 
 category_archive:
   type: liquid
